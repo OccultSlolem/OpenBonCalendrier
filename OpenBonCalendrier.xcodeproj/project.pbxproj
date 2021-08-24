@@ -14,6 +14,8 @@
 		3202B05826D4416A005EF0DF /* OpenBonCalendrierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202B05726D4416A005EF0DF /* OpenBonCalendrierTests.swift */; };
 		3202B06226D4416A005EF0DF /* OpenBonCalendrierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3202B06126D4416A005EF0DF /* OpenBonCalendrierUITests.swift */; };
 		325BC46F26D49AE100787257 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325BC46E26D49AE100787257 /* CloudKit.framework */; };
+		325BC47326D4B9AC00787257 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325BC47226D4B9AC00787257 /* Course.swift */; };
+		325BC47526D4BAA400787257 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325BC47426D4BAA400787257 /* ToDo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		325BC46B26D49A9C00787257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		325BC46C26D49AB500787257 /* OpenBonCalendrier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenBonCalendrier.entitlements; sourceTree = "<group>"; };
 		325BC46E26D49AE100787257 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		325BC47226D4B9AC00787257 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		325BC47426D4BAA400787257 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 		3202B04526D44166005EF0DF /* OpenBonCalendrier */ = {
 			isa = PBXGroup;
 			children = (
+				325BC47126D4B82A00787257 /* Utility */,
+				325BC47026D4B82100787257 /* View */,
 				325BC46C26D49AB500787257 /* OpenBonCalendrier.entitlements */,
 				325BC46B26D49A9C00787257 /* Info.plist */,
 				3202B04626D44166005EF0DF /* OpenBonCalendrierApp.swift */,
@@ -138,6 +144,22 @@
 				325BC46E26D49AE100787257 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		325BC47026D4B82100787257 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		325BC47126D4B82A00787257 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				325BC47226D4B9AC00787257 /* Course.swift */,
+				325BC47426D4BAA400787257 /* ToDo.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325BC47526D4BAA400787257 /* ToDo.swift in Sources */,
+				325BC47326D4B9AC00787257 /* Course.swift in Sources */,
 				3202B04926D44166005EF0DF /* ContentView.swift in Sources */,
 				3202B04726D44166005EF0DF /* OpenBonCalendrierApp.swift in Sources */,
 			);
